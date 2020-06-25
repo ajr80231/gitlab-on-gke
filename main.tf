@@ -28,8 +28,7 @@ module "enable_apis"  {
 }
 
 module "gke_gitlab" {
-  source            = "terraform-google-modules/gke-gitlab/google"
-  version           = "0.1.1"
+  source            = "git@github.com:bharathkkb/terraform-google-gke-gitlab.git?ref=feat-gitlab"
   certmanager_email = var.email
   project_id        = module.enable_apis.project_id
   region            = var.region
