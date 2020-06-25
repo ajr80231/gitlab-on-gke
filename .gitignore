@@ -5,8 +5,20 @@
 *.tfstate
 *.tfstate.*
 
+# Custom config 
+*.tfvars
+
+# intellij 
+.idea/*
 # Crash log files
 crash.log
+
+
+# terraform state backend
+backend.tf
+
+# Sets environmental variables for terraform 
+env.sh
 
 # Ignore any .tfvars files that are generated automatically for each Terraform run. Most
 # .tfvars files are managed as part of configuration and so should be included in
